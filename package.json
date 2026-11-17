@@ -45,6 +45,14 @@
     "@deepseek-ai/schemastery": "^3.18.1"
   },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasocheung/dsh-qwen-plan-usage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jasocheung/dsh-qwen-plan-usage/issues"
+  },
+  "homepage": "https://github.com/jasocheung/dsh-qwen-plan-usage#readme",
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
