@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Build / test artifacts
+*.log
+*.tgz
+coverage/
+
+# Sensitive: never commit cookies, keys, or captured console payloads
+*.cookies
+*.key
+qpu-*
+edge-cdp-profile/
+*.progress
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

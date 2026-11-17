@@ -1,0 +1,73 @@
+{
+  "name": "dsh-qwen-plan-usage",
+  "version": "0.2.0",
+  "description": "DSH (DeepSeek Harness) plugin: Qwen AI Platform Token Plan remaining-quota widget in the sidebar, same-origin usage proxy, a /qwen-plan chat command, and model guidance that auto-fetches the console cookie from the user's browser when unconfigured",
+  "icon": "assets/qwen-plan-usage.svg",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "files": [
+    "assets/*.svg",
+    "locale/*.json",
+    "lib",
+    "scripts",
+    "cordis.patch.yml"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "harness",
+    "cordis",
+    "cordis-plugin",
+    "qwen",
+    "qianwenai",
+    "token-plan",
+    "usage",
+    "quota",
+    "credits",
+    "plugin"
+  ],
+  "engines": {
+    "node": ">=18",
+    "dsh": ">=0.1.0-rc.1 <0.3.0-0"
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime"
+      ]
+    },
+    "catalog": {
+      "category": "ui",
+      "summary": {
+        "en": "Sidebar widget showing your Qwen AI Platform Token Plan remaining Credits, usage percent and reset time, with model guidance that auto-fetches the console cookie from your browser.",
+        "zh": "侧边栏组件，显示千问 AI 平台 Token Plan 剩余 Credits、用量百分比与重置时间；未配置时引导模型自动从你的浏览器获取控制台 cookie。"
+      },
+      "capabilities": [
+        "sidebar quota widget",
+        "same-origin usage proxy",
+        "/qwen-plan chat command",
+        "model cookie guidance",
+        "auto cookie extraction (Windows Edge/Chrome)"
+      ]
+    }
+  }
+}

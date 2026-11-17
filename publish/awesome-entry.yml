@@ -1,0 +1,18 @@
+# awesome-dsh-plugin 提交条目模板
+# 目标仓库: github.com/awesome-dsh-plugin/awesome-dsh-plugin (main, CC0-1.0)
+# 用法: 把本文件复制为该仓库的 data/plugins/<owner>__dsh-qwen-plan-usage.yml
+#       （<owner> 换成 boss 的 GitHub 用户名），单独提一个 PR，≤3 条/PR，不改他人条目。
+# 注意:
+#   - 禁手写 npm: 键 —— npm 映射由 registry 自动采集（前提: 本包 package.json.repository 指回被列仓库）。
+#   - 仓库年龄需 ≥1 天（CI 自动闸；新仓库会先 hold，之后自动重跑放行）。
+#   - description.en 必须一行、句号结尾、实事求是、无最高级；含 ": " 须加引号。
+#   - category 用 usage（额度/用量类）。
+#   - icon 可选（GitHub 托管位图 png/jpg/webp ~96px 方形；SVG/第三方图床会被拒）——暂不填。
+#   - tarball 可选（仅当仓库不可源码安装时必填）——本插件可源码安装，不填。
+
+url: https://github.com/<owner>/dsh-qwen-plan-usage
+name: <owner>/dsh-qwen-plan-usage
+category: usage
+description:
+  en: "Shows your Qwen AI Platform Token Plan remaining Credits, usage percent and reset time in the DSH sidebar, with model guidance that auto-fetches the console cookie from your browser."
+  zh: "在 DSH 侧边栏显示千问 AI 平台 Token Plan 剩余 Credits、用量百分比与重置时间，并引导模型自动从浏览器获取控制台 cookie。"
